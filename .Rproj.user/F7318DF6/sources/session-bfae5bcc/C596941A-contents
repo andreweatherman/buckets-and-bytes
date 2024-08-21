@@ -1,0 +1,11 @@
+---
+output: github_document
+---
+
+## Source Code for Buckets & Bytes
+
+This repository holds source code for visualizations and scraping tutorials on my blog, [Buckets & Bytes](https://aweatherman.substack.com).
+
+```{r, echo = FALSE, include = TRUE, eval = TRUE}
+knitr::include_graphics("logo.png")
+```

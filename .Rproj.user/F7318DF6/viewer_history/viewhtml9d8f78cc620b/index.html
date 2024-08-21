@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#table table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#table thead, #table tbody, #table tfoot, #table tr, #table td, #table th {
+  border-style: none;
+}
+
+#table p {
+  margin: 0;
+  padding: 0;
+}
+
+#table .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#table .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#table .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#table .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#table .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #37003C;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#table .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#table .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#table .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#table .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #37003C;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#table .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#table .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#table .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#table .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#table .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#table .gt_row {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#table .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#table .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#table .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#table .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#table .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#table .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#table .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#table .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+}
+
+#table .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_sourcenote {
+  font-size: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_left {
+  text-align: left;
+}
+
+#table .gt_center {
+  text-align: center;
+}
+
+#table .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#table .gt_font_normal {
+  font-weight: normal;
+}
+
+#table .gt_font_bold {
+  font-weight: bold;
+}
+
+#table .gt_font_italic {
+  font-style: italic;
+}
+
+#table .gt_super {
+  font-size: 65%;
+}
+
+#table .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#table .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#table .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#table .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#table .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#table .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#table .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#table .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#table div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+#table .gt_col_heading {
+  padding-bottom: 3px;
+}
+
+#table .gt_heading {
+  padding-bottom: 0px;
+  padding-top: 6px;
+}
+
+#table .gt_subtitle {
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+
+#table .gt_sourcenote {
+  line-height: 1.2;
+}
+
+#table .gt_column_spanner {
+  border-bottom-style: none !important;
+  display: none !important;
+}
+
+#table .gt_subtitle {
+  line-height: 1.2;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#table .gt_footnote {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000;
+  font-size: 12px;
+}
+
+#table .gt_footnote_marks {
+  display: none !important;
+}
+
+#table .gt_sourcenote {
+  text-align: right;
+}
+
+#table .gt_row {
+  border-top-color: black;
+}
+</style>
+  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
+      <td colspan="5" class="gt_heading gt_title gt_font_normal" style="font-family: Barlow; font-weight: 650;">Performance against top 100 teams over the past five seasons</td>
+    </tr>
+    <tr class="gt_heading">
+      <td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-family: Barlow; font-weight: 500;">Average T-Rank game score vs. then-top 100 opponents from 2020-2024; min. total 25 games</td>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #87668A; font-family: Barlow; font-size: 12px; font-weight: 650; text-transform: capitalize;" scope="col" id="&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #87668A; font-family: Barlow; font-size: 12px; font-weight: 650; text-transform: capitalize;" scope="col" id="&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #87668A; font-family: Barlow; font-size: 12px; font-weight: 650; text-transform: capitalize;" scope="col" id="&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #87668A; font-family: Barlow; font-size: 12px; font-weight: 650; text-transform: capitalize;" scope="col" id="&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #87668A; font-family: Barlow; font-size: 12px; font-weight: 650; text-transform: capitalize;" scope="col" id="&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  1. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>89.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (85)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  21. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/26.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (100)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  41. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2599.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (100)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  61. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/265.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (83)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  81. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2348.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (42)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  2. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/239.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>88.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (118)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  22. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2633.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (112)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  42. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/8.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (107)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  62. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/259.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>70.9</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (92)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  82. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/179.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (64)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  3. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/248.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>87.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (103)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  23. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/235.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>79.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (89)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  43. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/228.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (97)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  63. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/245.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>70.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (102)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  83. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2439.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (72)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  4. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/41.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>86.7</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (111)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  24. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/127.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>79.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (135)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  44. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (110)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  64. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2181.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>69.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (49)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  84. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>64.9</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (61)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  5. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2305.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>85.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (132)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  25. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/153.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>78.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (119)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  45. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (80)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  65. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>68.9</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (59)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  85. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/59.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>64.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (95)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  6. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2509.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>85.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (129)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  26. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2168.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>78.7</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (70)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  46. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/258.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (93)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  66. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2670.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>68.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (71)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  86. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/145.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>64.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (98)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  7. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/12.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>84.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (99)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  27. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/269.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>78.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (116)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  47. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/344.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>73.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (106)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  67. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/154.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>68.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (99)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  87. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2724.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>64.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (67)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  8. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/333.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>83.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (130)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  28. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/38.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>78.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (91)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  48. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/68.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>73.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (82)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  68. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>68.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (108)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  88. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/142.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>64.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (110)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  9. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/150.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>83.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (107)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  29. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2483.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>78.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (103)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  49. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2628.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>73.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (111)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  69. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2306.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>68.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (116)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  89. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2440.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>63.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (72)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  10. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/156.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>82.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (122)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  30. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>77.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (105)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  50. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/197.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (117)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  70. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/249.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>67.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (56)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  90. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/139.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>63.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (72)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  11. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/356.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>82.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (120)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  31. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/252.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>77.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (82)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  51. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2226.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.7</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (38)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  71. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/87.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>67.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (94)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  91. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/232.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>62.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (26)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  12. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/21.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>82.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (92)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  32. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/201.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>76.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (118)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  52. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/5.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (44)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  72. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/183.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>67.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (98)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  92. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2086.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>62.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (114)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  13. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/251.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>82.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (114)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  33. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/30.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>76.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (95)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  53. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/120.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (116)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  73. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/254.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>66.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (89)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  93. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/231.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>62.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (27)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  14. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/96.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>82.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (106)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  34. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/130.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>76.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (121)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  54. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/164.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (113)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  74. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2116.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>66.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (81)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  94. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/282.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>62.0</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (44)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  15. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/222.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>81.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (118)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  35. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/213.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>76.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (113)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  55. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/99.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>72.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (104)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  75. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2350.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>66.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (47)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  95. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/135.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>61.9</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (111)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  16. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>81.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (107)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  36. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/84.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>75.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (124)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  56. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/152.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.7</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (105)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  76. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/24.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>66.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (86)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  96. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/221.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>61.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (93)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  17. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2641.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (111)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  37. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/328.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>75.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (71)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  57. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/52.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (95)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  77. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/36.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.9</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (74)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  97. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2166.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>60.8</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (58)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  18. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2294.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (125)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  38. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/277.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>75.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (118)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  58. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/77.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (106)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  78. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/257.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (62)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  98. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/158.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>60.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (112)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  19. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/275.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.2</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (133)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  39. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/57.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.7</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (107)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  59. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/66.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (126)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  79. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/9.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.4</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (98)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  99. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/238.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>60.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (108)</span>
+</div>
+</span></td></tr>
+    <tr><td headers="formatted_score...1" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  20. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/194.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>80.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (120)</span>
+</div>
+</span></td>
+<td headers="formatted_score...2" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  40. &nbsp; 
+  <img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>74.6</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (103)</span>
+</div>
+</span></td>
+<td headers="formatted_score...3" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  60. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2132.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>71.1</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (80)</span>
+</div>
+</span></td>
+<td headers="formatted_score...4" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  80. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/264.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>65.3</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (90)</span>
+</div>
+</span></td>
+<td headers="formatted_score...5" class="gt_row gt_center" style="color: #000000; font-family: Barlow; font-size: 14px;"><span class='gt_from_md'><div style='display: flex; align-items: center;'>
+  100. &nbsp; 
+  <img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2460.png' alt='Logo' style='height:25px; margin-right: 8px;'> 
+  <span style='font-weight: bold; font-size: 1.2em; color: black; vertical-align: middle;'>60.5</span> 
+  <span style='font-size: 0.8em; color: gray; vertical-align: middle;'>&nbsp; (46)</span>
+</div>
+</span></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" style="font-family: Barlow;" colspan="5">Data by Barttorvik + cbbdata || Viz. + Analysis by @andreweatherman</td>
+    </tr>
+  </tfoot>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" style="font-family: Barlow;" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> <span class='gt_from_md'>Opponent rank is determined by Barttorvik T-Rank on game date. Game score is game-level Barthag performance (the<br>probability that you beat an average team on a neutral floor). Total games played is next to mean score.</span></td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</body>
+</html>

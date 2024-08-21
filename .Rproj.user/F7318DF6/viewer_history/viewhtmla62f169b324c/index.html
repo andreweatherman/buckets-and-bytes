@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#table table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#table thead, #table tbody, #table tfoot, #table tr, #table td, #table th {
+  border-style: none;
+}
+
+#table p {
+  margin: 0;
+  padding: 0;
+}
+
+#table .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#table .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#table .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#table .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#table .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#table .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#table .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#table .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#table .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#table .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#table .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#table .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#table .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#table .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#table .gt_row {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#table .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#table .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#table .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#table .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#table .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#table .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#table .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#table .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#table .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+}
+
+#table .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_footnote {
+  margin: 0px;
+  font-size: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#table .gt_sourcenote {
+  font-size: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#table .gt_left {
+  text-align: left;
+}
+
+#table .gt_center {
+  text-align: center;
+}
+
+#table .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#table .gt_font_normal {
+  font-weight: normal;
+}
+
+#table .gt_font_bold {
+  font-weight: bold;
+}
+
+#table .gt_font_italic {
+  font-style: italic;
+}
+
+#table .gt_super {
+  font-size: 65%;
+}
+
+#table .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#table .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#table .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#table .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#table .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#table .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#table .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#table .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#table div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+#table .gt_footnote {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  line-height: 1;
+}
+
+#table .gt_heading {
+  padding-bottom: 0px;
+  padding-top: 6px;
+}
+
+#table .gt_subtitle {
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+
+#table .gt_sourcenote {
+  text-align: right;
+}
+</style>
+  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
+      <td colspan="10" class="gt_heading gt_title gt_font_normal" style="font-family: 'Libre Franklin'; font-weight: 800;">Who are the best road teams in college basketball?</td>
+    </tr>
+    <tr class="gt_heading">
+      <td colspan="10" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>10 highest T-Rank ratings in true road performances (D-1 vs. D-1)</td>
+    </tr>
+    <tr class="gt_col_headings gt_spanner_row">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="avg&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;">avg<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="Team (record)">Team (record)</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Road Efficiency">
+        <span class="gt_column_spanner">Road Efficiency</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="4" scope="colgroup" id="Quadrant Records">
+        <span class="gt_column_spanner">Quadrant Records</span>
+      </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="2" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="Best&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/span&gt;">Best<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span></th>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="Adj. O">Adj. O</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="Adj. D">Adj. D</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="T-Rank&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;">T-Rank<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="q1">q1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="q2">q2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="q3">q3</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase;" scope="col" id="q4">q4</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="avg" class="gt_row gt_right" style="font-family: 'Source Sans Pro'; font-weight: 400;">#22</td>
+<td headers="team" class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Saint Mary’s (9-0)</span></td>
+<td headers="adj_o" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">119.2</td>
+<td headers="adj_d" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">89.9</td>
+<td headers="barthag" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">96.2%</td>
+<td headers="q1" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">1-0</td>
+<td headers="q2" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">3-0</td>
+<td headers="q3" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">2-0</td>
+<td headers="q4" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">3-0</td>
+<td headers="best" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">#6</td>
+<td headers="team" class="gt_row gt_left gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/2509.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Purdue (7-3)</span></td>
+<td headers="adj_o" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">123.3</td>
+<td headers="adj_d" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">96.4</td>
+<td headers="barthag" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">94.4%</td>
+<td headers="q1" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">7-3</td>
+<td headers="q2" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q3" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/356.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right" style="font-family: 'Source Sans Pro'; font-weight: 400;">#4</td>
+<td headers="team" class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/41.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Connecticut (9-3)</span></td>
+<td headers="adj_o" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">129.5</td>
+<td headers="adj_d" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">101.5</td>
+<td headers="barthag" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">94.2%</td>
+<td headers="q1" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">6-2</td>
+<td headers="q2" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">3-1</td>
+<td headers="q3" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/269.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">#8</td>
+<td headers="team" class="gt_row gt_left gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/153.png' style='height: 20px; width: auto; vertical-align: -25%;'>  North Carolina (8-2)</span></td>
+<td headers="adj_o" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">113.0</td>
+<td headers="adj_d" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">88.8</td>
+<td headers="barthag" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">94.1%</td>
+<td headers="q1" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">6-1</td>
+<td headers="q2" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">1-1</td>
+<td headers="q3" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">1-0</td>
+<td headers="q4" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/150.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right" style="font-family: 'Source Sans Pro'; font-weight: 400;">#6</td>
+<td headers="team" class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/150.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Duke (7-4)</span></td>
+<td headers="adj_o" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">123.6</td>
+<td headers="adj_d" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">98.4</td>
+<td headers="barthag" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">93.2%</td>
+<td headers="q1" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">5-3</td>
+<td headers="q2" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">2-1</td>
+<td headers="q3" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/221.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">#14</td>
+<td headers="team" class="gt_row gt_left gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/356.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Illinois (6-5)</span></td>
+<td headers="adj_o" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">129.2</td>
+<td headers="adj_d" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">103.0</td>
+<td headers="barthag" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">93.1%</td>
+<td headers="q1" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">6-5</td>
+<td headers="q2" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q3" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/275.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right" style="font-family: 'Source Sans Pro'; font-weight: 400;">#11</td>
+<td headers="team" class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='https://a.espncdn.com/i/teamlogos/ncaa/500/156.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Creighton (8-5)</span></td>
+<td headers="adj_o" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">116.6</td>
+<td headers="adj_d" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">93.4</td>
+<td headers="barthag" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">92.8%</td>
+<td headers="q1" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">3-4</td>
+<td headers="q2" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">5-1</td>
+<td headers="q3" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/158.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">#7</td>
+<td headers="team" class="gt_row gt_left gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/12.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Arizona (7-4)</span></td>
+<td headers="adj_o" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">123.8</td>
+<td headers="adj_d" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">99.4</td>
+<td headers="barthag" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">92.6%</td>
+<td headers="q1" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">4-1</td>
+<td headers="q2" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">3-2</td>
+<td headers="q3" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-1</td>
+<td headers="q4" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/150.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right" style="font-family: 'Source Sans Pro'; font-weight: 400;">#12</td>
+<td headers="team" class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Gonzaga (8-2)</span></td>
+<td headers="adj_o" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">122.6</td>
+<td headers="adj_d" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">99.0</td>
+<td headers="barthag" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">92.1%</td>
+<td headers="q1" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">2-1</td>
+<td headers="q2" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">1-1</td>
+<td headers="q3" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;">2-0</td>
+<td headers="q4" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">3-0</td>
+<td headers="best" class="gt_row gt_center" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+    <tr><td headers="avg" class="gt_row gt_right gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">#2</td>
+<td headers="team" class="gt_row gt_left gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;"><span class='gt_from_md'><img src='http://a.espncdn.com/i/teamlogos/ncaa/500/248.png' style='height: 20px; width: auto; vertical-align: -25%;'>  Houston (7-3)</span></td>
+<td headers="adj_o" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">118.3</td>
+<td headers="adj_d" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">95.5</td>
+<td headers="barthag" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: bold; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">92.1%</td>
+<td headers="q1" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">7-3</td>
+<td headers="q2" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q3" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;">0-0</td>
+<td headers="q4" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400; border-right-width: 1.5px; border-right-style: solid; border-right-color: black;">0-0</td>
+<td headers="best" class="gt_row gt_center gt_striped" style="font-family: 'Source Sans Pro'; font-weight: 400;"><span style="white-space:nowrap;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/239.png" style="height:20px;width:20;vertical-align:middle;"></span></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="10"><span class='gt_from_md'>Data by cbbdata + cbbplotR through 2023-24<br>Table + Analysis by @andreweatherman</span></td>
+    </tr>
+  </tfoot>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="10"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> Predictive Average: KenPom, T-Rank, BPI, and NET (rounded to nearest integer)</td>
+    </tr>
+    <tr>
+      <td class="gt_footnote" colspan="10"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> T-Rank Rating: WP% vs. average team on neutral floor based on road performance</td>
+    </tr>
+    <tr>
+      <td class="gt_footnote" colspan="10"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span> Highest current opponent T-Rank in a road win</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</body>
+</html>
